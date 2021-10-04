@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brick Breaker</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      #gameScreen {
+        border: 4px solid black;
+        background-color: #f7ecff;
+        /* credit for background image https://ansimuz.itch.io/cyberpunk-street-environment */
+        background-image: url("https://img.itch.zone/aW1hZ2UvMTI0NDE0LzU3MzIyNi5wbmc=/original/4T%2FEqv.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      img {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img id="img_ball" src="assets/images/ball.png" />
+    <img id="img_brick" src="assets/images/gg.png" />
+
+    <canvas id="gameScreen" width="800" height="600"> </canvas>
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
